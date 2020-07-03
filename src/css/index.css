@@ -206,8 +206,29 @@ nav ul li .menu-name {
 
 #footer {
   width: 100vw;
-  height: 40vh;
+  padding: 80px 100px;
   background-color: var(--main-strong-blue);
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+#footer .left {
+  display: flex;
+  flex-direction: column;
+}
+#footer .left img {
+  width: 200px;
+}
+#footer .right {
+  text-align: right;
+}
+#footer .right .footer-options span {
+  padding-left: 10px;
+}
+#footer .right .social-medias img {
+  width: 20px;
+  margin-left: 10px;
 }
 
 .bold {
