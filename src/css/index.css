@@ -9,7 +9,7 @@ body {
 }
 :root {
   --main-beige: #e4d0c1;
-  --main-coral: #f57360;
+  --main-coral: #e75b4c;
   --main-strong-blue: #122d50;
   --main-medium-blue: #0f4f9c;
   --main-soft-blue: #1da7d6;
@@ -97,6 +97,117 @@ nav ul li .menu-name {
 #about .container .body .about-image {
   width: 100%;
   margin: 50px 0;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.content .body {
+  font-size: 90px;
+  letter-spacing: 10px;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+}
+.content .body .body-action {
+  font-size: 16px;
+  letter-spacing: normal;
+}
+.section-image {
+  width: 60%;
+  height: auto;
+  position: absolute;
+  z-index: 2;
+}
+
+#to-know {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--main-coral);
+  color: white;
+}
+#to-know .content .section-image {
+  left: 0;
+}
+#to-know .content .body .body-action {
+  text-align: right;
+}
+
+#to-be {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--main-strong-blue);
+  color: white;
+}
+#to-be .content .section-image {
+  right: 0;
+}
+
+#to-do {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--main-soft-blue);
+  color: white;
+}
+#to-do .content .section-image {
+  left: 0;
+}
+#to-do .content .body .body-action {
+  text-align: right;
+}
+
+#coexist {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--main-beige);
+  color: white;
+}
+#coexist .content .section-image {
+  right: 0;
+}
+
+#call-to-action {
+  background-color: #ffffff;
+  padding: 120px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--main-medium-blue);
+}
+#call-to-action .container {
+  width: 43%;
+}
+#call-to-action .container .title {
+  font-size: 50px;
+  line-height: 54px;
+}
+#call-to-action .container .title .highlight-text {
+  color: var(--main-coral);
+}
+#call-to-action .container .body {
+  font-size: 18px;
+}
+#call-to-action .container .action {
+  width: 100%;
+  background-color: var(--main-soft-blue);
+  color: #ffffff;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 40px;
+  font-size: 44px;
+  border-radius: 50px;
+}
+
+#footer {
+  width: 100vw;
+  height: 40vh;
+  background-color: var(--main-strong-blue);
 }
 
 .bold {
