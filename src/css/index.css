@@ -1,13 +1,25 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
+}
+:root {
+  --main-beige: #e4d0c1;
+  --main-coral: #f57360;
+  --main-strong-blue: #122d50;
+  --main-medium-blue: #0f4f9c;
+  --main-soft-blue: #1da7d6;
+  --main-clean-blue: #00aeef;
 }
 
 nav {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #ffffff55;
   width: 100vw;
   height: 140px;
 }
@@ -22,11 +34,19 @@ nav ul {
 nav ul li {
   list-style: none;
 }
+nav ul li .menu-button {
+  width: 30px;
+  height: 40px;
+}
+nav ul li .menu-name {
+  width: 100px;
+}
 
 #home {
   width: 100vw;
   height: 100vh;
-  background-color: blue;
+  background-image: url('../assets/img/background_1.png');
+  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -36,17 +56,52 @@ nav ul li {
 #home img#logo {
   width: 300px;
   height: 300px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 #home .texts {
-  font-size: 40px;
+  font-size: 56px;
   display: flex;
   flex-direction: column;
   width: 600px;
-  line-height: 40px;
+  line-height: 56px;
   text-align: center;
+}
+#home .down-button {
+  width: 24px;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 40px;
 }
 
 #about {
   background-color: #ffffff;
+  padding: 160px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--main-medium-blue);
+}
+#about .container {
+  width: 43%;
+}
+#about .container .title {
+  font-size: 50px;
+  line-height: 54px;
+}
+#about .container .title .highlight-text {
+  color: var(--main-coral);
+}
+#about .container .body {
+  font-size: 18px;
+}
+#about .container .body .about-image {
+  width: 100%;
+  margin: 50px 0;
+}
+
+.bold {
+  font-weight: 700;
+}
+.normal {
+  font-weight: 300;
 }
