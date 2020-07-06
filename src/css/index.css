@@ -16,7 +16,7 @@ body {
   --main-clean-blue: #00aeef;
 }
 
-nav {
+nav#nav-menu {
   position: fixed;
   top: 0;
   left: 0;
@@ -25,7 +25,7 @@ nav {
   z-index: 8;
   background-image: -webkit-linear-gradient(var(--main-medium-blue), #ffffff00);
 }
-nav ul {
+nav#nav-menu ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -33,14 +33,15 @@ nav ul {
   margin: 0;
   height: 90%;
 }
-nav ul li {
+nav#nav-menu ul li {
   list-style: none;
+  cursor: pointer;
 }
-nav ul li .menu-button {
+nav#nav-menu ul li .menu-button {
   width: 30px;
   height: 40px;
 }
-nav ul li .menu-name {
+nav#nav-menu ul li .menu-name {
   width: 100px;
 }
 
@@ -311,6 +312,57 @@ nav ul li .menu-name {
   color: var(--main-beige);
 }
 
+#menu-drawer {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0;
+  background-color: #000a;
+  transition: .6s;
+}
+#menu-drawer.open {
+ z-index: 110;
+ opacity: 1;
+}
+#menu-drawer .menu-drawer-body {
+  width: 500px;
+  height: 100%;
+  background-color: white;
+  padding: 50px;
+  color: white;
+  font-weight: 300;
+  transform: translateX(100vw);
+  transition: .6s;
+}
+#menu-drawer.open .menu-drawer-body {
+  transform: translateX(calc(100vw - 500px));
+}
+#menu-drawer .menu-drawer-body .actions {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+#menu-drawer .menu-drawer-body .close-menu {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+#menu-drawer .menu-drawer-body .topics ul {
+  padding: 40px 0;
+}
+#menu-drawer .menu-drawer-body .topics ul li {
+  list-style: none;
+}
+#menu-drawer .menu-drawer-body .topics ul li a {
+  text-decoration: none;
+  color: var(--main-strong-blue);
+  font-weight: 500;
+  font-size: 22px;
+}
+
 .bold {
   font-weight: 700;
 }
@@ -319,18 +371,18 @@ nav ul li .menu-name {
 }
 
 @media(max-width: 768px) {
-  nav ul {
+  nav#nav-menu ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0px 30px;
     height: 80px;
   }
-  nav ul li .menu-button {
+  nav#nav-menu ul li .menu-button {
     width: 20px;
     height: 30px;
   }
-  nav ul li .menu-name {
+  nav#nav-menu ul li .menu-name {
     width: 70px;
   }
 
@@ -474,6 +526,13 @@ nav ul li .menu-name {
     transform: translateX(100vw);
   }
   #drawer.right.open .drawer-body {
+    transform: translateX(0);
+  }
+  #menu-drawer .menu-drawer-body {
+    width: 100vw;
+    transform: translateX(100vw);
+  }
+  #menu-drawer.open .menu-drawer-body {
     transform: translateX(0);
   }
 

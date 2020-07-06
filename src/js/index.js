@@ -91,6 +91,13 @@ $(document).ready(() => {
     $('#drawer.right').addClass('open');
     $('#drawer .drawer-body').addClass('coexist');
   })
+
+  $('#open-menu').click(() => {
+    $('#menu-drawer').addClass('open');
+  })
+  $('.close-menu').click(() => {
+    $('#menu-drawer').removeClass('open');
+  })
 })
 
 closeDrawer = (section) => {

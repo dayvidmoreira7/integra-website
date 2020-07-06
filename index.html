@@ -10,12 +10,14 @@
     <link href="src/css/index.css" rel="stylesheet">
   </head>
   <body>
-    <nav>
+    <nav id="nav-menu">
       <ul>
         <li>
-          <img src="src/assets/img/name.png" class="menu-name">
+          <a href="#home">
+            <img src="src/assets/img/name.png" class="menu-name">
+          </a>
         </li>
-        <li>
+        <li id="open-menu">
           <img src="src/assets/img/menu.png" class="menu-button">
         </li>
       </ul>
@@ -183,6 +185,32 @@
     <div id="drawer" class="right">
       <div class="drawer-background"></div>
       <div class="drawer-body"></div>
+    </div>
+    <div id="menu-drawer">
+      <div class="menu-drawer-body">
+        <div class="actions">
+          <img src="src/assets/img/close.png" class="close-menu">
+        </div>
+        <div class="topics">
+          <ul>
+            <li>
+              <a href="">Quem somos</a>
+            </li>
+            <li>
+              <a href="">Educação Integral</a>
+            </li>
+            <li>
+              <a href="">Pilares</a>
+            </li>
+            <li>
+              <a href="">Calendário</a>
+            </li>
+            <li>
+              <a href="">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
