@@ -4,29 +4,213 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Escola Integra</title>
+    <link rel="icon" href="src/assets/img/logo.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;500;700&display=swap" rel="stylesheet">
     <link href="src/css/index.css" rel="stylesheet">
   </head>
   <body>
-    <nav>
+    <nav id="nav-menu">
       <ul>
         <li>
-          a
+          <a href="#home">
+            <img src="src/assets/img/name.png" class="menu-name">
+          </a>
         </li>
-        <li>
-          b
+        <li id="open-menu">
+          <img src="src/assets/img/menu.png" class="menu-button">
         </li>
       </ul>
     </nav>
-    <div id="home">
-      <img src="src/assets/img/teste.jpg" id="logo">
+    <section id="home">
+      <img src="src/assets/img/logo.png" id="logo">
       <div class="texts">
         <span>A educação do futuro,</span>
         <span>agora.</span>
       </div>
+      <a href="#about">
+        <img src="src/assets/img/down-arrow.png" class="down-button">
+      </a>
+    </section>
+    <section id="about">
+      <div class="container">
+        <div class="title bold">
+          Desenvolvemos 
+          <span class="highlight-text">pessoas integralmente preparadas </span>
+          para um mundo em transformação.
+        </div>
+        <br />
+        <div class="body normal">
+          Somos movidos pela paixão de testemunhar e promover o desenvolvimento
+          humano de forma integrada e pelo nosso propósito de conectar a educação
+          brasileira ao contexto mundial em que vivemos.
+          <br />
+          <br />
+          Nossos jovens são estimulados a 
+          <span class="bold">identificar e reconhecer o seu propósito</span>,
+          cultivar a perseverança para vivê-lo e buscar conhecimento através de práticas
+          e projetos colaborativos. 
+          <span class="bold">Nossos educadores compreendem o conceito de
+          mentalidade de crescimento</span>, 
+          e encaram cada estudante como uma
+          <span class="bold">oportunidade de aprendizagem</span>. 
+          Todos aprendem continuamente através de
+          experiências que resultam em um desenvolvimento sólido e integral.
+        </div>
+        <br />
+        <br />
+        <br />
+        <div class="title bold">
+          Nosso jeito de educar
+        </div>
+        <br />
+        <div class="body normal">
+          <span class="bold">Oferecemos aos nossos estudantes Educação Integral:</span> 
+          uma concepção que
+          compreende que as experiências na nossa escola devem olhar para o
+          desenvolvimento do estudante em todas as suas dimensões:
+          <br />
+          <img src="src/assets/img/about.png" class="about-image">
+          <br />
+          Em nossa escola o foco é direcionar ao estudante, de forma que o projeto
+          pedagógico é construído, avaliado e reorientado a partir de seu
+          desenvolvimento e perspectiva de futuro. Através da realização de atividades
+          cooperativas que valorizam a experiência, nossos jovens reconhecem o seu
+          valor dentro e fora do ambiente escolar, tornando-os 
+          <span class="bold">participativos em sala de
+          aula e ativos na comunidade.</span>
+        </div>
+      </div>
+    </section>
+    <section id="to-know">
+      <div class="content">
+        <img src="src/assets/img/background_2.png" class="section-image">
+        <div class="desktop-only"></div>
+        <div class="body">
+          Conhecer
+          <span class="body-action">⭠ Saiba mais</span>
+        </div>
+      </div>
+    </section>
+    <section id="to-be">
+      <div class="content">
+        <img src="src/assets/img/background_3.png" class="section-image">
+        <div class="body">
+          Ser
+          <span class="body-action">Saiba mais ⭢</span>
+        </div>
+        <div class="desktop-only"></div>
+      </div>
+    </section>
+    <section id="to-do">
+      <div class="content">
+        <img src="src/assets/img/background_4.png" class="section-image">
+        <div class="desktop-only"></div>
+        <div class="body">
+          Fazer
+          <span class="body-action">⭠ Saiba mais</span>
+        </div>
+      </div>
+    </section>
+    <section id="coexist">
+      <div class="content">
+        <img src="src/assets/img/background_5.png" class="section-image">
+        <div class="body">
+          Conviver
+          <span class="body-action">Saiba mais ⭢</span>
+        </div>
+        <div class="desktop-only"></div>
+      </div>
+    </section>
+    <section id="call-to-action">
+      <div class="container">
+        <div class="title bold">
+          <span class="highlight-text">Formamos pessoas felizes</span>
+        </div>
+        <br />
+        <div class="body normal">
+          Acreditamos que todos os estudantes, quando expostos à experiências de
+          aprendizagem planejadas em um ambiente de confiança e afeto, tem
+          condições de desenvolver a excelência como hábito e se tornam capazes de
+          se transformar e de conduzir essa transformação ao seu redor.
+          <br />
+          <br />
+          <span class="bold">
+            Oferecemos o direcionamento e o apoio para que nossos estudantes
+            possam lidar com os desafios e conquistar seus sonhos de maneira sábia,
+            generosa e honesta.
+          </span>
+          <br />
+          <br />
+          <span class="bold">Faça parte desta transformação.</span>
+          <br />
+          <br />
+          <br />
+          <div class="action">Matrículas abertas</div>
+        </div>
+      </div>
+    </section>
+    <section id="footer">
+      <div class="left">
+        <img src="src/assets/img/logo_w_name.png">
+        <br />
+        <span>Rua José Lourenço, 242 - São Paulo</span>
+        <span>Juiz de Fora - Minas Gerais</span>
+        <br />
+        <span>T. +1 (234) 567 89 01</span>
+      </div>
+      <div class="right">
+        <div class="social-medias">
+          <img src="src/assets/img/facebook.png">
+          <img src="src/assets/img/instagram.png">
+          <img src="src/assets/img/youtube.png">
+          <img src="src/assets/img/twitter.png">
+          <img src="src/assets/img/linkedin.png">
+        </div>
+        <br />
+        <span>contato@integra.com</span>
+        <br />
+        <br />
+        <div class="footer-options">
+          <span>Quem somos</span>
+          <span>Educação Integral</span>
+          <span>Pilares</span>
+        </div>
+      </div>
+    </section>
+    <div id="drawer" class="left">
+      <div class="drawer-background"></div>
+      <div class="drawer-body"></div>
     </div>
-    <div id="about">
-      
+    <div id="drawer" class="right">
+      <div class="drawer-background"></div>
+      <div class="drawer-body"></div>
+    </div>
+    <div id="menu-drawer">
+      <div class="menu-drawer-body">
+        <div class="actions">
+          <img src="src/assets/img/close.png" class="close-menu">
+        </div>
+        <div class="topics">
+          <ul>
+            <li>
+              <a href="">Quem somos</a>
+            </li>
+            <li>
+              <a href="">Educação Integral</a>
+            </li>
+            <li>
+              <a href="">Pilares</a>
+            </li>
+            <li>
+              <a href="">Calendário</a>
+            </li>
+            <li>
+              <a href="">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
