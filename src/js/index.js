@@ -98,6 +98,10 @@ $(document).ready(() => {
   $('.close-menu').click(() => {
     $('#menu-drawer').removeClass('open');
   })
+
+  $('.topics ul li a').click(() => {
+    $('#menu-drawer').removeClass('open');
+  });
 })
 
 closeDrawer = (section) => {

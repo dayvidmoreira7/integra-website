@@ -1,11 +1,12 @@
 html {
   scroll-behavior: smooth;
+ 
 }
 body {
-  padding: 0;
-  margin: 0;
   overflow-x: hidden;
   font-family: 'Roboto', sans-serif;
+  padding: 0;
+  margin: 0;
 }
 :root {
   --main-beige: #e4d0c1;
@@ -121,6 +122,7 @@ nav#nav-menu ul li .menu-name {
   font-size: 16px;
   letter-spacing: normal;
   cursor: pointer;
+  text-decoration-line: underline;
 }
 .section-image {
   width: 60%;
@@ -260,6 +262,7 @@ nav#nav-menu ul li .menu-name {
   font-weight: 300;
   transform: translateX(-500px);
   transition: .6s;
+  overflow-y: auto;
 }
 #drawer.open .drawer-body {
   transform: translateX(0);
@@ -371,6 +374,9 @@ nav#nav-menu ul li .menu-name {
 }
 
 @media(max-width: 768px) {
+  nav#nav-menu {
+    height: 80px;
+  }
   nav#nav-menu ul {
     display: flex;
     align-items: center;
@@ -515,25 +521,27 @@ nav#nav-menu ul li .menu-name {
   }
 
   #drawer .drawer-body {
-    width: 100vw;
-    transform: translateX(-100vw);
+    width: 90vw;
+    padding: 30px;
+    transform: translateX(-90vw);
   }
   #drawer.open .drawer-body {
     transform: translateX(0);
   }
   #drawer.right .drawer-body {
-    width: 100vw;
-    transform: translateX(100vw);
+    width: 90vw;
+    padding: 30px;
+    transform: translateX(90vw);
   }
   #drawer.right.open .drawer-body {
-    transform: translateX(0);
+    transform: translateX(10vw);
   }
   #menu-drawer .menu-drawer-body {
-    width: 100vw;
-    transform: translateX(100vw);
+    width: 90vw;
+    transform: translateX(90vw);
   }
   #menu-drawer.open .menu-drawer-body {
-    transform: translateX(0);
+    transform: translateX(10vw);
   }
 
   .desktop-only {
