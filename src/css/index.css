@@ -43,7 +43,7 @@ nav#nav-menu ul li .menu-button {
   height: 40px;
 }
 nav#nav-menu ul li .menu-name {
-  width: 100px;
+  width: 130px;
 }
 
 #home {
@@ -209,6 +209,7 @@ nav#nav-menu ul li .menu-name {
   padding: 6px 40px;
   font-size: 44px;
   border-radius: 50px;
+  text-decoration: none;
 }
 
 #footer {
@@ -423,7 +424,7 @@ nav#nav-menu ul li .menu-name {
     height: 30px;
   }
   nav#nav-menu ul li .menu-name {
-    width: 70px;
+    width: 90px;
   }
 
   #home img#logo {
@@ -534,6 +535,7 @@ nav#nav-menu ul li .menu-name {
     padding: 6px 40px;
     font-size: 24px;
     border-radius: 50px;
+    text-decoration: none;
   }
 
   #footer {
